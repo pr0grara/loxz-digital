@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "dev": "nodemon .",
+    "build": "INLINE_RUNTIME_CHUNK=false npm run build --prefix client"
   },
   "keywords": [],
   "author": "",

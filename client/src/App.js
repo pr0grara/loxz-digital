@@ -1,12 +1,12 @@
 import D from './big_D.png';
-import logo from './logo.png';
+import logo from './loxz_digital_logo.png';
 import './App.css';
 import * as typeformEmbed from '@typeform/embed'
 
 function App() {
 
   const reference = typeformEmbed.createPopup(
-    'https://tscheotnwcv.typeform.com/to/xF6ZyWUR',
+    'https://developerplatform.typeform.com/to/Xc7NMh',
     {
       mode: 'popup',
       autoClose: 3000,
@@ -15,7 +15,12 @@ function App() {
     }
   )
 
-  reference.open();
+  // reference.open();
+
+  // document.addEventListener('DOMContentReady', () => {
+  //   let popup = document.querySelector('.typeform-popup')
+  //   debugger
+  // })
 
   // setTimeout(function () {
   //   reference.close()
