@@ -1,12 +1,20 @@
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 // const results = require('./routes/api/results');
 // const surveys = require('./routes/api/surveys');
 const path = require('path');
 
 const app = express();
+
+var corsOptions = {
+    origin: 'https://typeformsem.typeform.com/',
+    optionsSuccessStatus: 200 // For legacy browser support
+}
+
+app.use(cors(corsOptions));
 
 const db = new Sequelize('postgres://arabaghdassarian:@localhost:5432/loxz_survey');
 
