@@ -18,7 +18,7 @@ function App() {
     }
   )
 
-  reference.open();
+  // reference.open();
 
   // const embedElement = document.querySelector('#root');
   // console.log(embedElement)
