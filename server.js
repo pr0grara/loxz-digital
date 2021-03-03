@@ -1,6 +1,7 @@
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
 const express = require('express');
+require('dotenv/config');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 // const results = require('./routes/api/results');
@@ -22,14 +23,13 @@ app.use(function (req, res, next) {
 // }
 
 // app.use(cors(corsOptions));
-
-const db = new Sequelize('postgres://arabaghdassarian:@localhost:5432/loxz_survey');
+const db = new Sequelize(process.env.PG_CONN_STRING);
 
 try {
     db.authenticate()
         .then(console.log("succesfully connected to db"));
 } catch {
-    console.log("didn't work")
+    console.log("db connection failed")
 }
 
 app.get("/", (req, res) => {
