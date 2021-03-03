@@ -1,4 +1,4 @@
-require("dotenv").config();
+// require("dotenv").config();
 const { Sequelize } = require("sequelize");
 const express = require('express');
 require('dotenv/config');
@@ -23,7 +23,9 @@ app.use(function (req, res, next) {
 // }
 
 // app.use(cors(corsOptions));
-const db = new Sequelize(process.env.PG_CONN_STRING);
+// const db = new Sequelize(process.env.PG_CONN_STRING);
+const db = new Sequelize('postgres://arabaghdassarian:@localhost:5432/loxz_survey');
+
 
 try {
     db.authenticate()
