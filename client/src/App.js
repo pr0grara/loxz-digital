@@ -56,22 +56,23 @@ function App() {
   // // const typeform = typeformEmbed.
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={D} className="App-logo" alt="logo" />
-        <p>
-          <code>&#60;survey&#62;</code>
-          <a
-            className="logo-link"
-            href="http://loxz.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          </a>
-        </p>
-        <img src={logo} className="logo" alt="logo" />
-      </header>
-    </div>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={D} className="App-logo" alt="logo" />
+    //     <p>
+    //       <code>&#60;survey&#62;</code>
+    //       <a
+    //         className="logo-link"
+    //         href="http://loxz.com"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //       </a>
+    //     </p>
+    //     <img src={logo} className="logo" alt="logo" />
+    //   </header>
+    // </div>
+    <div className="empty"></div>
   );
 }
 
