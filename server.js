@@ -21,7 +21,7 @@ app.use(function (req, res, next) {
 //     origin: 'https://typeformsem.typeform.com/',
 //     optionsSuccessStatus: 200 // For legacy browser support
 // }
-
+// console.log(process.env)
 // app.use(cors(corsOptions));
 // const db = new Sequelize(process.env.PG_CONN_STRING);
 const db = new Sequelize('postgres://arabaghdassarian:@localhost:5432/loxz_survey');

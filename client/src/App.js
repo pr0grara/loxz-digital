@@ -9,7 +9,7 @@ function App() {
   const reference = typeformEmbed.createPopup(
     // 'https://developerplatform.typeform.com/to/Xc7NMh',
     // 'https://loxz.typeform.com/to/xF6ZyWUR',
-    'xF6ZyWUR',
+    'AhCdegfT',
     {
       mode: 'drawer_left',
       autoClose: 3000,
@@ -50,29 +50,29 @@ function App() {
   //   debugger
   // })
 
-  setTimeout(function () {
-    reference.close()
-  }, 10000) // NOTE: In this code, the typeform will automatically open, then automatically close 10 seconds later
+  // setTimeout(function () {
+  //   reference.close()
+  // }, 10000) // NOTE: In this code, the typeform will automatically open, then automatically close 10 seconds later
   // // const typeform = typeformEmbed.
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={D} className="App-logo" alt="logo" />
-        <p>
-          <code>&#60;survey&#62;</code>
-          <a
-            className="logo-link"
-            href="http://loxz.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          </a>
-        </p>
-        <img src={logo} className="logo" alt="logo" />
-      </header>
-    </div>
-    // <div className="empty"></div>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={D} className="App-logo" alt="logo" />
+    //     <p>
+    //       <code>&#60;survey&#62;</code>
+    //       <a
+    //         className="logo-link"
+    //         href="http://loxz.com"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //       </a>
+    //     </p>
+    //     <img src={logo} className="logo" alt="logo" />
+    //   </header>
+    // </div>
+    <div className="empty"></div>
   );
 }
 
