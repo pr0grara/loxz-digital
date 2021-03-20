@@ -23,8 +23,8 @@ app.use(function (req, res, next) {
 // }
 // console.log(process.env)
 // app.use(cors(corsOptions));
-// const db = new Sequelize(process.env.PG_CONN_STRING);
-const db = new Sequelize('postgres://arabaghdassarian:@localhost:5432/loxz_survey');
+// const db = new Sequelize('postgres://arabaghdassarian:@localhost:5432/loxz_survey');
+const db = new Sequelize(process.env.PG_CONN_STRING);
 
 
 try {
