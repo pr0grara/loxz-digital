@@ -39,6 +39,9 @@ app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 })
 
+app.use("/plotly", (req, res) => {
+    
+})
 // app.use('/api/answers', answers);
 // app.use('/api/results', results);
 // app.use('/api/surveys', surveys);
