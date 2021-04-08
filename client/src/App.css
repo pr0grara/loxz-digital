@@ -71,3 +71,8 @@ iframe {
   top:0;
   border:0;
 }
+
+.close {
+  border: red 2px;
+  z-index: 1;
+}

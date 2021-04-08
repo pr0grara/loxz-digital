@@ -6,19 +6,19 @@ import * as typeformEmbed from '@typeform/embed'
 
 function App() {
 
-  const reference = typeformEmbed.createPopup(
+  // const reference = typeformEmbed.createPopup(
     // 'https://developerplatform.typeform.com/to/Xc7NMh',
     // 'https://loxz.typeform.com/to/xF6ZyWUR',
-    'xF6ZyWUR',
-    {
-      mode: 'drawer_left',
-      autoClose: 3000,
-      hideHeaders: false,
-      hideFooters: true,
-    }
-  )
+  //   'xF6ZyWUR',
+  //   {
+  //     mode: 'drawer_left',
+  //     autoClose: 3000,
+  //     hideHeaders: false,
+  //     hideFooters: true,
+  //   }
+  // )
 
-  reference.open();
+  // reference.open();
 
   // const embedElement = document.querySelector('#root');
   // console.log(embedElement)
