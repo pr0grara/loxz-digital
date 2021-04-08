@@ -1,10 +1,13 @@
-body {
+html, body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 code {
@@ -24,6 +27,10 @@ iframe {
 }
 
 .frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   position: absolute;
   background-color: rgb(25, 28, 54);
   height: 100%;
@@ -33,7 +40,7 @@ iframe {
   bottom:0;
   top:0;
   border:0;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .frame > img {
@@ -63,10 +70,11 @@ iframe {
 
 .fade-in {
   position: relative;
-  display: block;
-  top: 25%;
-  left: 45%;
-  margin: 1em 0 0 0;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* top: 25%; */
+  /* left: 45%; */
+  /* margin: 2em 0 0 0; */
   color: antiquewhite;
   font-size: 2rem;
   /* background-color: antiquewhite; */
@@ -80,19 +88,26 @@ iframe {
 
 #take-survey-button {
   position: relative;
-  left: 50%;
+  /* margin-left: auto;
+  margin-right: auto; */
   top: 50%;
-  width: 6rem;
-  height: 3rem;
+  /* width: 6rem; */
+  /* height: 3rem; */
   color: white;
   font-size: 125%;
   font-family: sans-serif;
-  background-color: #0d6efd;
-  border-radius: 4px;
-  border: white solid 1px;
-  box-shadow: #0d6efd 0px 0px 1000px 150px;
-  transition: opacity box-shadow 500ms ease-in;
-  margin-top: 15rem;
+  background-color: rgb(25, 28, 54);
+  /* border-radius: 4px; */
+  /* border: white solid 1px; */
+  box-shadow: #0d6efd 0px 0px 1000px 10px;
+  transition: box-shadow 3500ms ease-in;
+  margin-top: 5rem;
   /* offset: path("M -50 50 L -500 50 z") auto; */
   /* animation: move 3s linear infinite; */
 }
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
