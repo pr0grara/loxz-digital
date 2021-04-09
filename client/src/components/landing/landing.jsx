@@ -94,7 +94,9 @@ class Landing extends React.Component {
                         <div className='fade-in'>i</div>
                         <div className='fade-in'>n</div>
                         <div className='fade-in'>g</div>
-        
+                        <div className='fade-in'>.</div>
+                        <div className='fade-in'>.</div>
+                        <div className='fade-in'>.</div>
                     </div>
                 </Row>
                 <Row>
