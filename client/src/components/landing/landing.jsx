@@ -8,34 +8,27 @@ class Landing extends React.Component {
         this.reference = () => {};
         this.launchSurvey = this.launchSurvey.bind(this);
     }
-
-    display() {
-
-    }
-
     
-    async componentDidMount() {
+    componentDidMount() {
         let faders = document.querySelectorAll('.fade-in');
-        let shadow = document.querySelector('#take-survey-button');
-        // debugger
+        let shadow = document.querySelector('#take-survey');
+
         for (let i = 0; i < faders.length; i++) {
-            // debugger
-            // if (i === faders.length - 1) {
-            //     setTimeout(() => faders[i].classList.add('appear'), 4000);
-            //     return
-            // } 
-            setTimeout(() => faders[i].classList.add('appear'), i * 2000 + 1500);
+            setTimeout(() => faders[i].classList.add('appear'), i * 60);
+            setTimeout(() => faders[i].classList.remove('appear'), i * 60 + 4000);
         }
+
         setTimeout(() => {
             shadow.style.boxShadow = "#0d6efd 0px 0px 1000px 1000px";
-        }, 4000)
-        setTimeout(() => this.launchSurvey(), 7000)
+        }, 4000);
+
+        setTimeout(() => this.launchSurvey(), 7000);
     }
     
     launchSurvey() {
-        let closeButton = document.createElement('div');
-        closeButton.className = 'close';
-        closeButton.innerText = 'close';
+        // let closeButton = document.createElement('div');
+        // closeButton.className = 'close';
+        // closeButton.innerText = 'close';
         const reference = typeformEmbed.createSlider(
            'xF6ZyWUR',
            {
@@ -49,8 +42,8 @@ class Landing extends React.Component {
        //     reference.close()
        // }, 10000)
         reference.open();
-        closeButton.onclick = () => reference.close();
-        document.querySelector('.frame').append(closeButton)
+        // closeButton.onclick = () => reference.close();
+        // document.querySelector('.frame').append(closeButton)
     }
 
     render() {
@@ -58,21 +51,56 @@ class Landing extends React.Component {
         return (
             <Container className='frame'>
                 <Row>
-                    <Col xs={6} className='fade-in'>Get ready to (re)discover Machine Learning...</Col>
-                </Row>
-                {/* <Row>
-                    <Col xs={6} className='fade-in'>to (re)discover...</Col>
+                    <div id='div-sentence'>
+                        <div className='fade-in'>G</div>
+                        <div className='fade-in'>e</div>
+                        <div className='fade-in'>t</div>
+                        <div className='fade-in'>&nbsp;</div>
+                        <div className='fade-in'>r</div>
+                        <div className='fade-in'>e</div>
+                        <div className='fade-in'>a</div>
+                        <div className='fade-in'>d</div>
+                        <div className='fade-in'>y</div>
+                        <div className='fade-in'>&nbsp;</div>
+                        <div className='fade-in'>t</div>
+                        <div className='fade-in'>o</div>
+                        <div className='fade-in'>&nbsp;</div>
+                        <div className='fade-in'>(</div>
+                        <div className='fade-in'>r</div>
+                        <div className='fade-in'>e</div>
+                        <div className='fade-in'>)</div>
+                        <div className='fade-in'>d</div>
+                        <div className='fade-in'>i</div>
+                        <div className='fade-in'>s</div>
+                        <div className='fade-in'>c</div>
+                        <div className='fade-in'>o</div>
+                        <div className='fade-in'>v</div>
+                        <div className='fade-in'>e</div>
+                        <div className='fade-in'>r</div>
+                        <div className='fade-in'>&nbsp;</div>
+                        <div className='fade-in'>M</div>
+                        <div className='fade-in'>a</div>
+                        <div className='fade-in'>c</div>
+                        <div className='fade-in'>h</div>
+                        <div className='fade-in'>i</div>
+                        <div className='fade-in'>n</div>
+                        <div className='fade-in'>e</div>
+                        <div className='fade-in'>&nbsp;</div>
+                        <div className='fade-in'>L</div>
+                        <div className='fade-in'>e</div>
+                        <div className='fade-in'>a</div>
+                        <div className='fade-in'>r</div>
+                        <div className='fade-in'>n</div>
+                        <div className='fade-in'>i</div>
+                        <div className='fade-in'>n</div>
+                        <div className='fade-in'>g</div>
+        
+                    </div>
                 </Row>
                 <Row>
-                    <Col className='fade-in'>Machine Learning?</Col>
-                </Row> */}
-                <Row>
-                    <div id='take-survey-button' className='fade-in'></div>
-                    
-                    {/* <button id="take-survey-button" className='fade-in' onClick={this.launchSurvey}>let's go</button> */}
+                    <div id='take-survey'></div>                    
                 </Row>
             </Container>
-            // <div className='fade-in'>hello</div>
         )
     }
 }
