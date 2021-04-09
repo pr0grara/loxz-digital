@@ -14,15 +14,15 @@ class Landing extends React.Component {
         let shadow = document.querySelector('#take-survey');
 
         for (let i = 0; i < faders.length; i++) {
-            setTimeout(() => faders[i].classList.add('appear'), i * 60);
-            setTimeout(() => faders[i].classList.remove('appear'), i * 60 + 4000);
+            setTimeout(() => faders[i].classList.add('appear'), i * 35);
+            setTimeout(() => faders[i].classList.remove('appear'), i * 35 + 2000);
         }
 
         setTimeout(() => {
             shadow.style.boxShadow = "#0d6efd 0px 0px 1000px 1000px";
-        }, 4000);
+        }, 2000);
 
-        setTimeout(() => this.launchSurvey(), 7000);
+        setTimeout(() => this.launchSurvey(), 3000);
     }
     
     launchSurvey() {
