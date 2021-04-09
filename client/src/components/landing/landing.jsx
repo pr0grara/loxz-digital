@@ -52,15 +52,12 @@ class Landing extends React.Component {
             <Container className='frame'>
                 <Row>
                     <div id='div-sentence'>
-                        <div className='fade-in'>G</div>
-                        <div className='fade-in'>e</div>
-                        <div className='fade-in'>t</div>
-                        <div className='fade-in'>&nbsp;</div>
+                        <div className='fade-in'>P</div>
                         <div className='fade-in'>r</div>
                         <div className='fade-in'>e</div>
                         <div className='fade-in'>a</div>
-                        <div className='fade-in'>d</div>
-                        <div className='fade-in'>y</div>
+                        <div className='fade-in'>r</div>
+                        <div className='fade-in'>e</div>
                         <div className='fade-in'>&nbsp;</div>
                         <div className='fade-in'>t</div>
                         <div className='fade-in'>o</div>
