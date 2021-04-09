@@ -55,6 +55,7 @@ class Landing extends React.Component {
                         <div className='fade-in'>P</div>
                         <div className='fade-in'>r</div>
                         <div className='fade-in'>e</div>
+                        <div className='fade-in'>p</div>
                         <div className='fade-in'>a</div>
                         <div className='fade-in'>r</div>
                         <div className='fade-in'>e</div>
