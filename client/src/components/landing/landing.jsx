@@ -15,7 +15,7 @@ class Landing extends React.Component {
 
         for (let i = 0; i < faders.length; i++) {
             setTimeout(() => faders[i].classList.add('appear'), i * 35);
-            setTimeout(() => faders[i].classList.remove('appear'), i * 35 + 2000);
+            setTimeout(() => faders[i].classList.remove('appear'), i * 35 + 3000);
         }
 
         setTimeout(() => {
@@ -52,7 +52,8 @@ class Landing extends React.Component {
             <Container className='frame'>
                 <Row>
                     <div id='div-sentence'>
-                        <div className='fade-in'>P</div>
+                        <div className='fade-in'>Prepare to harness the Power of Machine Learning in less than 7 minutes?</div>
+                        {/* <div className='fade-in'>P</div>
                         <div className='fade-in'>r</div>
                         <div className='fade-in'>e</div>
                         <div className='fade-in'>p</div>
@@ -94,7 +95,7 @@ class Landing extends React.Component {
                         <div className='fade-in'>g</div>
                         <div className='fade-in'>.</div>
                         <div className='fade-in'>.</div>
-                        <div className='fade-in'>.</div>
+                        <div className='fade-in'>.</div> */}
                     </div>
                 </Row>
                 <Row>
