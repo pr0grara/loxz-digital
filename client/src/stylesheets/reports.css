@@ -1,0 +1,80 @@
+.privacy-cta-container {
+    position: absolute;
+    bottom: 10px;
+    width: 200px;
+    left: calc(50% - 100px);
+    color: grey;
+}
+
+.ctas-container {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+}
+
+.cta-img {
+    margin-left: .5rem;
+    transform: scaleY(.7);
+    max-width: 50px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-txt {
+    font-weight: 400;
+    color: white;
+}
+
+.cta:hover {
+    transform: scaleX(1.03);
+}
+
+.reports-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to right, #0e6a98 20%, #014483 20% 100%, #0e6a98 80%); */
+    background-color: #014483;
+}
+
+.report-container {
+    position: relative;
+    --width: 50vw;
+    --height: calc(var(--width) * 0.56);
+    width: var(--width);
+    height: var(--height);
+    z-index: 1;
+    box-shadow: whitesmoke 0px 0px 7px 1px;
+}
+
+.report-cover {
+    width: var(--width);
+}
+
+.report-details-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    transition: all ease-in-out 500ms;
+    z-index: -1;
+}
+
+.hidden {
+    transform: translateY(-30px);
+}

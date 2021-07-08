@@ -1,4 +1,6 @@
 @import 'stylesheets/pdf.css';
+@import 'stylesheets/reports.css';
+@import 'stylesheets/privacy.css';
 
 html, body {
   margin: 0;
@@ -47,6 +49,15 @@ iframe {
 .frame > img {
   height: 100%;
   width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:visited {
+  text-decoration: none;
 }
 
 @keyframes move {

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
+// import { Document, Page, pdfjs } from 'react-pdf';
 import report from '../../pdfs/21Q2Report.pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Report extends React.Component {
     constructor(props) {
@@ -68,9 +68,10 @@ class Report extends React.Component {
     render() {
         return (
             <div className="pdf-container">
-                <Document file={report} onLoadError={console.error} >
+                <a href={report} className="pdf-link">click</a>
+                {/* <Document file={report} onLoadError={console.error} >
                     <Page pageNumber={this.pageNumber} width={this.format === "WIDTH" ? this.width : 0} height={this.format === "HEIGHT" ? this.height : 0}/>
-                </Document>
+                </Document> */}
             </div>
         )
     }
