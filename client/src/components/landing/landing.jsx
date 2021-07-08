@@ -1,6 +1,6 @@
 import React from 'react';
 import * as typeformEmbed from '@typeform/embed'
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 class Landing extends React.Component {
     constructor(props) {

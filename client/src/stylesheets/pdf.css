@@ -1,0 +1,17 @@
+.pdf-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #0e6a98 20%, #014483 30% 80%, #0e6a98 90%);
+}
+
+.react-pdf__Page__canvas {
+    /* width: 100vw!important;
+    min-width: 1000px!important; */
+}
+
+.react-pdf__Document {
+    box-shadow: white 1px 1px 10px;
+}

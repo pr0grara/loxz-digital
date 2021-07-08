@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import Landing from './landing';
+import Report from './report';
 
 const mSTP = state => {
     return {
-        content: state.entities
+        content: state.entities.article
     };
 };
 
@@ -12,4 +12,4 @@ const mDTP = dispatch => {
     };
 };
 
-export default connect(mSTP, mDTP)(Landing);
+export default connect(mSTP, mDTP)(Report);
