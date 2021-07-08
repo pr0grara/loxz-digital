@@ -1,6 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
+// import { Router, browserHistory } from 'react-router';
 import App from './app'
 
 
@@ -11,9 +12,9 @@ const Root = ({ store }) => {
     // root.style.height = `${document.documentElement.scrollHeight}px`  
     return (
         <Provider store={store}>
-            <HashRouter>
+            <BrowserRouter >
                 <App />
-            </HashRouter>
+            </BrowserRouter>
         </Provider>
     )
 };

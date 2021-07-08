@@ -9,7 +9,7 @@ const App = () => {
     return (
         <Switch>
             {/* <Route exact path="/"><LandingContainer /></Route> */}
-            <Route exact path="/Q22021"><ReportContainer /></Route>
+            <Route exact path="/ml-readiness-report-Q2-2021"><ReportContainer /></Route>
             <Route path="/"><LandingContainer /></Route>
         </Switch>
     )
