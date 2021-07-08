@@ -10,6 +10,9 @@ class Report extends React.Component {
         this.scroll = this.scroll.bind(this);
         this.keydown = this.keydown.bind(this);
         this.scrollTime = Date.now();
+        this.width = 1500;
+        this.height = 0;
+        this.format = "";
     }
 
     display() {
@@ -17,6 +20,12 @@ class Report extends React.Component {
     }
 
     componentDidMount() {
+        this.format = ((window.innerHeight / window.innerWidth) < 0.57) ?  "HEIGHT" : "WIDTH";
+        this.height = window.innerHeight;
+        this.width = window.innerWidth;
+        this.setState(() => this.height)
+        this.setState(() => this.width)
+        this.setState(() => this.format)
         document.addEventListener('wheel', this.scroll)
         document.addEventListener('keydown', this.keydown)
     }
@@ -32,8 +41,8 @@ class Report extends React.Component {
     }
 
     scroll(e) {
-        if (e.wheelDeltaY < 0 && e.wheelDeltaY > -200) return;
-        if (e.wheelDeltaY > 0 && e.wheelDeltaY < 200) return;
+        if (e.wheelDeltaY < 0 && e.wheelDeltaY > -30) return;
+        if (e.wheelDeltaY > 0 && e.wheelDeltaY < 30) return;
         let now = Date.now();
         if (now - this.scrollTime < 1000) return;
         this.scrollTime = now;
@@ -60,7 +69,7 @@ class Report extends React.Component {
         return (
             <div className="pdf-container">
                 <Document file={report} onLoadError={console.error} >
-                    <Page pageNumber={this.pageNumber} width={window.innerWidth}/>
+                    <Page pageNumber={this.pageNumber} width={this.format === "WIDTH" ? this.width : 0} height={this.format === "HEIGHT" ? this.height : 0}/>
                 </Document>
             </div>
         )
