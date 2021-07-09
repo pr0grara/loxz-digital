@@ -50,9 +50,9 @@
 }
 
 .cta-img {
-    margin-left: .5rem;
-    transform: scaleY(.7);
-    /* max-width: 50px; */
+    margin-left: .2rem;
+    /* transform: scaleY(.7); */
+    max-width: 100px;
 }
 
 .cta {

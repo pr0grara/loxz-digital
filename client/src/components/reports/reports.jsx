@@ -2,7 +2,7 @@ import React from 'react';
 // import ReportContainer from '../report/report_container'
 import report from '../../pdfs/21Q2Report.pdf';
 import Q22021 from '../../images/Q2-2021.png';
-import right from '../../icons/right-arrow.png';
+import right from '../../icons/yumi-arrow.png';
 
 class Reports extends React.Component {
     constructor(props) {

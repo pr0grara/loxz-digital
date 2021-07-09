@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.73c327ee.chunk.css",
-    "main.js": "/static/js/main.4c45f02e.chunk.js",
-    "main.js.map": "/static/js/main.4c45f02e.chunk.js.map",
+    "main.css": "/static/css/main.1982639b.chunk.css",
+    "main.js": "/static/js/main.34e145a7.chunk.js",
+    "main.js.map": "/static/js/main.34e145a7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.63c2ac30.js",
     "runtime-main.js.map": "/static/js/runtime-main.63c2ac30.js.map",
     "static/js/2.e78b83cf.chunk.js": "/static/js/2.e78b83cf.chunk.js",
@@ -10,15 +10,16 @@
     "static/js/3.2f6efced.chunk.js": "/static/js/3.2f6efced.chunk.js",
     "static/js/3.2f6efced.chunk.js.map": "/static/js/3.2f6efced.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.73c327ee.chunk.css.map": "/static/css/main.73c327ee.chunk.css.map",
+    "static/css/main.1982639b.chunk.css.map": "/static/css/main.1982639b.chunk.css.map",
     "static/js/2.e78b83cf.chunk.js.LICENSE.txt": "/static/js/2.e78b83cf.chunk.js.LICENSE.txt",
     "static/media/21Q2Report.b0a80712.pdf": "/static/media/21Q2Report.b0a80712.pdf",
-    "static/media/Q2-2021.bbad2ba7.png": "/static/media/Q2-2021.bbad2ba7.png"
+    "static/media/Q2-2021.bbad2ba7.png": "/static/media/Q2-2021.bbad2ba7.png",
+    "static/media/yumi-arrow.aba22607.png": "/static/media/yumi-arrow.aba22607.png"
   },
   "entrypoints": [
     "static/js/runtime-main.63c2ac30.js",
     "static/js/2.e78b83cf.chunk.js",
-    "static/css/main.73c327ee.chunk.css",
-    "static/js/main.4c45f02e.chunk.js"
+    "static/css/main.1982639b.chunk.css",
+    "static/js/main.34e145a7.chunk.js"
   ]
 }
