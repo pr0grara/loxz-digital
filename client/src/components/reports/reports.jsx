@@ -52,6 +52,10 @@ class Reports extends React.Component {
                 </div>
             </div>
             <div className="reports-container">
+                <div className="reports-header-container">
+                    <div className="reports-header">Welcome to Loxz.  Each quarter we release our findings from our ML Readiness Survey.   This survey released on July 7, 2021, focuses on whether a company is ready for the implementation of machine learning in their organization and is structured to help you define four major barriers to assist in your efforts.</div>
+                    <div className="reports-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
+                </div>
                 {/* {!this.clicked 
                 ? 
                     <div className="report-container" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} >
