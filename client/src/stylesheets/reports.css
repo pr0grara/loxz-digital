@@ -137,4 +137,12 @@
     .ctas-container {
         bottom: 15px;
     }
+
+    .reports-header {
+        font-size: 1.3rem;
+    }
+
+    .reports-signature {
+        font-size: 1rem;
+    }
 }
