@@ -52,10 +52,7 @@ class Reports extends React.Component {
                 </div>
             </div>
             <div className="reports-container">
-                <div className="reports-header-container">
-                    <div className="reports-header">Welcome to Loxz.  Each quarter we release our findings from our ML Readiness Survey. This report released on July 7, 2021, focuses on whether a company is ready for the implementation of machine learning in their organization and is structured to help you define four major barriers to assist in your efforts.</div>
-                    <div className="reports-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
-                </div>
+                
                 {/* {!this.clicked 
                 ? 
                     <div className="report-container" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} >
@@ -68,12 +65,22 @@ class Reports extends React.Component {
                 <ReportContainer />
                 } */}
                 <div className="report-container">
+                    <div className="reports-header-container">
+                        <div className="reports-header">Welcome to Loxz.  Each quarter we release our findings from our ML Readiness Survey. This report released on July 7, 2021, focuses on whether a company is ready for the implementation of machine learning in their organization and is structured to help you define four major barriers to assist in your efforts.</div>
+                        <div className="reports-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
+                        <div className="cta-container">
+                            <a href={report} className="link cta">
+                                <div className="cta-text">Go to Report</div>
+                                <img src={right} alt="" className="cta-img" />
+                            </a>
+                        </div>
+                    </div>
                     <a href={report} className="report-link"><img src={Q22021} alt="Q2 2021" className="report-cover" /></a>
                 </div>
             </div>
             <div className="privacy-cta-container">
                     <div className="cta-container">
-                        <a href="https://survey.loxz.com/#/privacy-policy" className="link cta">
+                        <a href="https://survey.loxz.com/#/privacy-policy" className="link cta report-link">
                             <div className="cta-text">privacy policy</div>
                             {/* <img src={right} alt="" className="cta-img" /> */}
                         </a>
