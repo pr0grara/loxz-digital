@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f14f2ec.chunk.css",
-    "main.js": "/static/js/main.ed350b6f.chunk.js",
-    "main.js.map": "/static/js/main.ed350b6f.chunk.js.map",
+    "main.css": "/static/css/main.4adebe1e.chunk.css",
+    "main.js": "/static/js/main.b3c5071c.chunk.js",
+    "main.js.map": "/static/js/main.b3c5071c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.63c2ac30.js",
     "runtime-main.js.map": "/static/js/runtime-main.63c2ac30.js.map",
     "static/js/2.e78b83cf.chunk.js": "/static/js/2.e78b83cf.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.2f6efced.chunk.js": "/static/js/3.2f6efced.chunk.js",
     "static/js/3.2f6efced.chunk.js.map": "/static/js/3.2f6efced.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.3f14f2ec.chunk.css.map": "/static/css/main.3f14f2ec.chunk.css.map",
+    "static/css/main.4adebe1e.chunk.css.map": "/static/css/main.4adebe1e.chunk.css.map",
     "static/js/2.e78b83cf.chunk.js.LICENSE.txt": "/static/js/2.e78b83cf.chunk.js.LICENSE.txt",
     "static/media/21Q2Report.b0a80712.pdf": "/static/media/21Q2Report.b0a80712.pdf",
     "static/media/Q2-2021.bbad2ba7.png": "/static/media/Q2-2021.bbad2ba7.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.63c2ac30.js",
     "static/js/2.e78b83cf.chunk.js",
-    "static/css/main.3f14f2ec.chunk.css",
-    "static/js/main.ed350b6f.chunk.js"
+    "static/css/main.4adebe1e.chunk.css",
+    "static/js/main.b3c5071c.chunk.js"
   ]
 }
