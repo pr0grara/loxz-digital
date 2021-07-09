@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     /* align-items: center; */
     /* background-image: linear-gradient(to right, #0e6a98 20%, #014483 30% 100%, #0e6a98 80%); */
@@ -16,7 +16,7 @@
     --width: 50vw;
     --height: calc(var(--width) * 0.56);
     width: var(--width);
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     /* height: var(--height); */
     z-index: 1;
     /* box-shadow: whitesmoke 0px 0px 7px 1px; */
@@ -123,4 +123,18 @@
 
 .hidden {
     transform: translateY(-30px);
+}
+
+@media(max-width: 500px) {
+    .report-container {
+        width: 80vw;
+    }
+
+    .report-cover {
+        width: 80vw;
+    }
+
+    .ctas-container {
+        bottom: 15px;
+    }
 }
