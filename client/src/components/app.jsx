@@ -11,9 +11,9 @@ const App = () => {
     return (
         <Switch>
             {/* <Route exact path="/"><LandingContainer /></Route> */}
+            <Route exact path="/"><LandingContainer /></Route>
             <Route exact path="/reports"><ReportsContainer /></Route>
             <Route exact path="/privacy-policy"><PrivacyContainer /></Route>
-            <Route exact path="/"><LandingContainer /></Route>
         </Switch>
     )
 }
