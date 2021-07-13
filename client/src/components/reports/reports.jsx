@@ -1,7 +1,9 @@
 import React from 'react';
 // import ReportContainer from '../report/report_container'
 import report from '../../pdfs/21Q2Report.pdf';
+import risk from '../../pdfs/RiskPerspective.pdf';
 import Q22021 from '../../images/Q2-2021.png';
+import riskImg from '../../images/riskImg.png';
 import right from '../../icons/yumi-arrow.png';
 
 class Reports extends React.Component {
@@ -16,7 +18,7 @@ class Reports extends React.Component {
     }
 
     componentDidMount() {
-        document.addEventListener('keypress', this.handlekeypress)
+        // document.addEventListener('keypress', this.handlekeypress)
     }
 
     handlekeypress(e) {
@@ -43,31 +45,32 @@ class Reports extends React.Component {
     render() {
         return (
             <>
-            <div className="ctas-container">
-                <div className="cta-container">
-                    <a href="https://survey.loxz.com" className="link cta">
-                        <div className="cta-text">take the survey</div>
-                        <img src={right} alt="" className="cta-img" />
-                    </a>
+            <div className="footer-container">
+                <div className="privacy-cta-container">
+                    <div className="cta-container">
+                        <a href="https://survey.loxz.com/#/privacy-policy" className="link cta report-link">
+                            <div className="cta-text">privacy policy</div>
+                            {/* <img src={right} alt="" className="cta-img" /> */}
+                        </a>
+                    </div>
+                </div>
+                <div className="ctas-container">
+                    <div className="cta-container">
+                        <a href="https://survey.loxz.com" className="link cta">
+                            <div className="cta-text">take the survey</div>
+                            <img src={right} alt="" className="cta-img" />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="reports-container">
-                
-                {/* {!this.clicked 
-                ? 
-                    <div className="report-container" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} >
-                    <img src={Q22021} alt="Q2 2021" onClick={this.onclick} className="report-cover" />
-                    <div className="report-details-container hidden">
-                            <a href={report} className="download-link"><img src={download} alt="download" className="report-detail" /></a>
-                    </div>
-                </div> 
-                : 
-                <ReportContainer />
-                } */}
+                <div className="blocker-component">&nbsp;</div>
+                <div className="reports-header">Welcome to Loxz. Each quarter we release our findings from our ML Readiness Survey. You can find all reports here.</div>
                 <div className="report-container">
+                    <a href={report} className="report-link"><img src={Q22021} alt="Q2 2021" className="report-cover" /></a>
                     <div className="reports-header-container">
-                        <div className="reports-header">Welcome to Loxz.  Each quarter we release our findings from our ML Readiness Survey. This report released on July 7, 2021, focuses on whether a company is ready for the implementation of machine learning in their organization and is structured to help you define four major barriers to assist in your efforts.</div>
-                        <div className="reports-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
+                        <div className="report-header">This report released on July 7, 2021, focuses on whether a company is ready for the implementation of machine learning in their organization and is structured to help you define four major barriers to assist in your efforts.</div>
+                        <div className="report-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
                         <div className="cta-container">
                             <a href={report} className="link cta">
                                 <div className="cta-text">Go to Report</div>
@@ -75,16 +78,20 @@ class Reports extends React.Component {
                             </a>
                         </div>
                     </div>
-                    <a href={report} className="report-link"><img src={Q22021} alt="Q2 2021" className="report-cover" /></a>
                 </div>
-            </div>
-            <div className="privacy-cta-container">
-                    <div className="cta-container">
-                        <a href="https://survey.loxz.com/#/privacy-policy" className="link cta report-link">
-                            <div className="cta-text">privacy policy</div>
-                            {/* <img src={right} alt="" className="cta-img" /> */}
-                        </a>
+                <div className="report-container">
+                    <a href={risk} className="report-link"><img src={riskImg} alt="Q2 2021" className="report-cover" /></a>
+                    <div className="reports-header-container">
+                        <div className="report-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, aperiam!</div>
+                        <div className="report-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
+                        <div className="cta-container">
+                            <a href={risk} className="link cta">
+                                <div className="cta-text">Go to Report</div>
+                                <img src={right} alt="" className="cta-img" />
+                            </a>
+                        </div>
                     </div>
+                </div>
             </div>
             </>
         )

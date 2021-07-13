@@ -1,14 +1,41 @@
 .reports-container {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap;
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
     /* align-items: center; */
+    align-items: flex-start;
     /* background-image: linear-gradient(to right, #0e6a98 20%, #014483 30% 100%, #0e6a98 80%); */
-    background-image: linear-gradient( #011e41, #014483);
+    background-image: linear-gradient(#011e41, #014483);
     /* background-color: #014483; */
+    z-index: 1;
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkblue;
+    background-image: linear-gradient(to top, #011e41, #014483);
+    z-index: 2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reports-header {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.8rem;
+    /* border: solid 1px white; */
+    max-width: 90%;
+    font-family: Roboto;
 }
 
 .report-container {
@@ -16,6 +43,7 @@
     --width: 40vw;
     --height: calc(var(--width) * 0.56);
     width: var(--width);
+    margin: 0 1rem 3rem 1rem;
     /* margin-top: 3rem; */
     /* height: var(--height); */
     z-index: 1;
@@ -29,24 +57,25 @@
 
 .privacy-cta-container {
     font-family: Roboto;
-    position: absolute;
+    /* position: absolute;
     bottom: 10px;
+    left: calc(50% - 100px); */
     width: 200px;
-    left: calc(50% - 100px);
     color: lightgrey;
 }
 
 .ctas-container {
     font-family: Roboto;
-    position: absolute;
+    /* position: absolute;
     right: 10px;
-    bottom: 5px;
+    bottom: 5px; */
     color: white;
 }
 
 .cta-container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .cta-img {
@@ -61,7 +90,7 @@
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
-    width: 100%;
+    /* width: 100%; */
     font-weight: 600;
 }
 
@@ -91,12 +120,12 @@
     /* max-width: 530px; */
 }
 
-.reports-signature {
+.report-signature {
     margin-top: 1rem;
     font-size: 1.2rem;
 }
 
-.reports-header {
+.report-header {
     font-size: 1.5rem;
 }
 
@@ -144,8 +173,12 @@
         font-size: 1.3rem;
     }
 
-    .reports-signature {
-        font-size: 1rem;
+    .report-header {
+        font-size: 1.1rem;
+    }
+
+    .report-signature {
+        font-size: 1.1rem;
     }
 }
 
