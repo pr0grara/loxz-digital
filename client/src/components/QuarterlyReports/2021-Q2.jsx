@@ -12,12 +12,22 @@ class Q2_2021 extends React.Component {
                     <title>ML Readiness Report for Q2 2021</title>
                     <meta property="og:image" content="%PUBLIC_URL%/Q2-2021.png" />
                 </Helmet>
-                <div className="ctas-container">
-                    <div className="cta-container">
-                        <a href="https://survey.loxz.com" className="link cta">
-                            <div className="cta-text">take the survey</div>
-                            <img src={right} alt="" className="cta-img" />
-                        </a>
+                <div className="footer-container">
+                    <div className="privacy-cta-container">
+                        <div className="cta-container">
+                            <a href="https://survey.loxz.com/#/privacy-policy" className="link cta report-link">
+                                <div className="cta-text">privacy policy</div>
+                                {/* <img src={right} alt="" className="cta-img" /> */}
+                            </a>
+                        </div>
+                    </div>
+                    <div className="ctas-container">
+                        <div className="cta-container">
+                            <a href="https://survey.loxz.com" className="link cta">
+                                <div className="cta-text">take the survey</div>
+                                <img src={right} alt="" className="cta-img" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className="reports-container">
@@ -33,14 +43,6 @@ class Q2_2021 extends React.Component {
                             </div>
                         </div>
                     <a href={report} className="report-link"><img src={Q22021} alt="Q2 2021" className="report-cover" /></a>
-                    </div>
-                </div>
-                <div className="privacy-cta-container">
-                    <div className="cta-container">
-                        <a href="https://survey.loxz.com/#/privacy-policy" className="link cta report-link">
-                            <div className="cta-text">privacy policy</div>
-                            {/* <img src={right} alt="" className="cta-img" /> */}
-                        </a>
                     </div>
                 </div>
             </>
