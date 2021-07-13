@@ -30,7 +30,7 @@ class Q2_2021 extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="reports-container">
+                <div className="reports-container solo-report">
                     <div className="report-container">
                         <div className="reports-header-container">
                             <div className="report-header">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptate asperiores totam illo fuga praesentium, assumenda, sit dolor eaque vel voluptates inventore nisi quam similique provident ipsam saepe tenetur perspiciatis!</div>
