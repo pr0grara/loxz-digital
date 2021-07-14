@@ -70,7 +70,7 @@ class Reports extends React.Component {
                     <a href={report} className="report-link"><img src={Q22021} alt="Q2 2021" className="report-cover" /></a>
                     <div className="reports-header-container">
                         <div className="report-header">This report released on July 7, 2021, focuses on whether a company is ready for the implementation of machine learning in their organization and is structured to help you define four major barriers to assist in your efforts.</div>
-                        <div className="report-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
+                        <div className="report-signature">-Chen Song, Lead Contributor, Data Scientist</div>
                         <div className="cta-container">
                             <a href={report} className="link cta">
                                 <div className="cta-text">Go to Report</div>
@@ -82,8 +82,8 @@ class Reports extends React.Component {
                 <div className="report-container">
                     <a href={risk} className="report-link"><img src={riskImg} alt="Q2 2021" className="report-cover" /></a>
                     <div className="reports-header-container">
-                        <div className="report-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, aperiam!</div>
-                        <div className="report-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
+                            <div className="report-header">In the 2-page report discover whether your company segment takes enough risk when building models. Leaders tend to be more conservative while start ups take more risk.</div>
+                        <div className="report-signature">-Chen Song, Data Scientist</div>
                         <div className="cta-container">
                             <a href={risk} className="link cta">
                                 <div className="cta-text">Go to Report</div>

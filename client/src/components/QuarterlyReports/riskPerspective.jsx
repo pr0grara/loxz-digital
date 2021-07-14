@@ -33,8 +33,8 @@ class Q2_2021 extends React.Component {
                 <div className="reports-container solo-report">
                     <div className="report-container">
                         <div className="reports-header-container">
-                            <div className="report-header">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptate asperiores totam illo fuga praesentium, assumenda, sit dolor eaque vel voluptates inventore nisi quam similique provident ipsam saepe tenetur perspiciatis!</div>
-                            <div className="report-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
+                            <div className="report-header">In the 2-page report discover whether your company segment takes enough risk when building models. Leaders tend to be more conservative while start ups take more risk.</div>
+                            <div className="report-signature">-Chen Song, Data Scientist</div>
                             <div className="cta-container">
                                 <a href={risk} className="link cta">
                                     <div className="cta-text">Go to Report</div>
