@@ -12,17 +12,20 @@ class Landing extends React.Component {
     componentDidMount() {
         let faders = document.querySelectorAll('.fade-in');
         let shadow = document.querySelector('#take-survey');
+        let delay = 0;
 
         for (let i = 0; i < faders.length; i++) {
-            setTimeout(() => faders[i].classList.add('appear'), i * 35);
-            setTimeout(() => faders[i].classList.remove('appear'), i * 35 + 3000);
+            delay = delay + parseInt(faders[i].dataset.delay);
+            // debugger
+            setTimeout(() => faders[i].classList.add('appear'), delay);
+            // setTimeout(() => faders[i].classList.remove('appear'), i * 35 + 3000);
         }
 
-        setTimeout(() => {
-            shadow.style.boxShadow = "#0d6efd 0px 0px 1000px 1000px";
-        }, 2000);
+        // setTimeout(() => {
+        //     shadow.style.boxShadow = "#0d6efd 0px 0px 1000px 1000px";
+        // }, 2000);
 
-        setTimeout(() => this.launchSurvey(), 3000);
+        // setTimeout(() => this.launchSurvey(), 3000);
     }
     
     launchSurvey() {
@@ -51,9 +54,18 @@ class Landing extends React.Component {
         
         return (
             <Container className='frame'>
-                <Row>
+                <div className="paragraph-container">
+                    <div className="paragraph">
+                        <div className="fade-in" data-delay="500">These days it's all about the data... but it only really helps us if we can properly analyze it to extract meaningfull insights...</div>
+                        <div className="fade-in" data-delay="4000">So how can we determine if we are ready to leverage our data with technologies like Machine Learning?</div>
+                        <div className="fade-in" data-delay="3000">At Loxz, we are building a suite of tools not only to deploy ML models but also to understand if you are ready to use these powerful tools.</div>
+                        <div className="fade-in" data-delay="4500">We have developed an assesment which helps us understand your companies level of readiness and will soon provide you with reccomendations!</div>
+                        <div className='fade-in' data-delay="4500">Please take 5 min and use our free ML readiness assesment!</div>
+                        <div className="fade-in button-container" data-delay="1000">
+                            <div className="button" onClick={this.launchSurvey}>Lets Go!</div>
+                        </div>
+                    </div>
                     <div id='div-sentence'>
-                        <div className='fade-in'>Prepare to harness the Power of Machine Learning in less than 7 minutes?</div>
                         {/* <div className='fade-in'>P</div>
                         <div className='fade-in'>r</div>
                         <div className='fade-in'>e</div>
@@ -98,7 +110,7 @@ class Landing extends React.Component {
                         <div className='fade-in'>.</div>
                         <div className='fade-in'>.</div> */}
                     </div>
-                </Row>
+                </div>
                 <Row>
                     <div id='take-survey'></div>                    
                 </Row>

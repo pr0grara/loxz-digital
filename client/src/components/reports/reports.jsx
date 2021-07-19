@@ -54,6 +54,7 @@ class Reports extends React.Component {
                         </a>
                     </div>
                 </div>
+                <div className="launching-soon">Launching Soon</div>
                 <div className="ctas-container">
                     <div className="cta-container">
                         <a href="https://survey.loxz.com" className="link cta">
