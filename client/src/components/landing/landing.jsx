@@ -59,7 +59,7 @@ class Landing extends React.Component {
                         <div className="fade-in" data-delay="500">Welcome to Loxz Digital!  We are a machine learning collective based in Berkeley, CA.</div>
                         <div className="fade-in" data-delay="2000">These days it’s all about the data... and it helps if your organization can confidently analyze and extract meaningful insights from that data.</div>
                         <div className="fade-in" data-delay="4500">At Loxz, our team of data scientists and solutions engineers are developing a toolkit to help you understand your data, identify your unique problem statement and efficiently create and deploy Machine Learning Models.</div>
-                        <div className="fade-in" data-delay="6000">To assist you further, we have designed an assessment that helps us better understand your level of exposure to Machine Learning and will soon provide you with targeted recommendations!</div>
+                        <div className="fade-in" data-delay="6000">To assist you further, we have designed an assessment that helps us better understand your level of exposure to Machine Learning and will soon provide you with targeted recommendations.</div>
                         <div className='fade-in' data-delay="6000">Here is the link to take your ML Readiness Assessment. Thanks.</div>
                         <div className="fade-in button-container" data-delay="1000">
                             <div className="button" onClick={this.launchSurvey}>Lets Go!</div>
