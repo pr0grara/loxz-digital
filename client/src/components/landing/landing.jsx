@@ -56,11 +56,11 @@ class Landing extends React.Component {
             <Container className='frame'>
                 <div className="paragraph-container">
                     <div className="paragraph">
-                        <div className="fade-in" data-delay="500">These days it's all about the data... but it only really helps if you can properly analyze it to extract meaningfull insights...</div>
-                        <div className="fade-in" data-delay="4000">So how can you determine if you are ready to leverage your data with technologies like Machine Learning?</div>
-                        <div className="fade-in" data-delay="3000">At Loxz, we are building a suite of tools not only to deploy ML models but also to understand if you are ready to use these powerful tools.</div>
-                        <div className="fade-in" data-delay="4500">We have developed an assesment which helps us understand your companies level of readiness and will soon provide you with reccomendations!</div>
-                        <div className='fade-in' data-delay="4500">Please spend 5 min and take our ML readiness assesment</div>
+                        <div className="fade-in" data-delay="500">Welcome to Loxz Digital!  We are a machine learning collective based in Berkeley, CA.</div>
+                        <div className="fade-in" data-delay="2000">These days it’s all about the data... and it helps if your organization can confidently analyze and extract meaningful insights from that data.</div>
+                        <div className="fade-in" data-delay="4500">At Loxz, our team of data scientists and solutions engineers are developing a toolkit to help you understand your data, identify your unique problem statement and efficiently create and deploy Machine Learning Models.</div>
+                        <div className="fade-in" data-delay="6000">To assist you further, we have designed an assessment that helps us better understand your level of exposure to Machine Learning and will soon provide you with targeted recommendations!</div>
+                        <div className='fade-in' data-delay="6000">Here is the link to take your ML Readiness Assessment. Thanks.</div>
                         <div className="fade-in button-container" data-delay="1000">
                             <div className="button" onClick={this.launchSurvey}>Lets Go!</div>
                         </div>
