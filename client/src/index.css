@@ -38,8 +38,8 @@ iframe {
   align-items: center;
   /* position: absolute; */
   background-color: rgb(25, 28, 54);
-  /* height: 3000px; */
   width: 100%;
+  min-height: 100vh;
 }
 
 .frame > img {

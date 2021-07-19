@@ -56,11 +56,11 @@ class Landing extends React.Component {
             <Container className='frame'>
                 <div className="paragraph-container">
                     <div className="paragraph">
-                        <div className="fade-in" data-delay="500">These days it's all about the data... but it only really helps us if we can properly analyze it to extract meaningfull insights...</div>
-                        <div className="fade-in" data-delay="4000">So how can we determine if we are ready to leverage our data with technologies like Machine Learning?</div>
+                        <div className="fade-in" data-delay="500">These days it's all about the data... but it only really helps if you can properly analyze it to extract meaningfull insights...</div>
+                        <div className="fade-in" data-delay="4000">So how can you determine if you are ready to leverage your data with technologies like Machine Learning?</div>
                         <div className="fade-in" data-delay="3000">At Loxz, we are building a suite of tools not only to deploy ML models but also to understand if you are ready to use these powerful tools.</div>
                         <div className="fade-in" data-delay="4500">We have developed an assesment which helps us understand your companies level of readiness and will soon provide you with reccomendations!</div>
-                        <div className='fade-in' data-delay="4500">Please take 5 min and use our free ML readiness assesment!</div>
+                        <div className='fade-in' data-delay="4500">Please spend 5 min and take our ML readiness assesment</div>
                         <div className="fade-in button-container" data-delay="1000">
                             <div className="button" onClick={this.launchSurvey}>Lets Go!</div>
                         </div>
