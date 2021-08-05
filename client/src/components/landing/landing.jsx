@@ -11,7 +11,7 @@ class Landing extends React.Component {
     
     componentDidMount() {
         let faders = document.querySelectorAll('.fade-in');
-        let shadow = document.querySelector('#take-survey');
+        // let shadow = document.querySelector('#take-survey');
         let delay = 0;
 
         for (let i = 0; i < faders.length; i++) {
@@ -33,8 +33,8 @@ class Landing extends React.Component {
         // closeButton.className = 'close';
         // closeButton.innerText = 'close';
         const reference = typeformEmbed.createSlider(
-        //    'AhCdegfT', //secondary
-           'xF6ZyWUR', //primary
+           'AhCdegfT', //secondary
+        //    'xF6ZyWUR', //primary
            {
                mode: 'drawer_left',
             //    autoClose: 5,

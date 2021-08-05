@@ -4,8 +4,7 @@ const express = require('express');
 require('dotenv/config');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-// const results = require('./routes/api/results');
-// const surveys = require('./routes/api/surveys');
+const videos = require('./routes/api/videos');
 const path = require('path');
 const app = express();
 
@@ -42,7 +41,12 @@ app.get("/", (req, res) => {
 app.use("/plotly", (req, res) => {
     
 })
-// app.use('/api/answers', answers);
+
+app.get("/videos", (req, res) => {
+    console.log("__dirname:", __dirname)
+    res.sendFile("file_example_MP4_480_1_5MG.mp4", { root: __dirname + "/assets/videos" })
+})
+app.use('/api/videos', videos);
 // app.use('/api/results', results);
 // app.use('/api/surveys', surveys);
 // app.use('/api/questions', questions);
