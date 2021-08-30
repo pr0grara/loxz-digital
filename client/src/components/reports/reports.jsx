@@ -2,9 +2,11 @@ import React from 'react';
 // import ReportContainer from '../report/report_container'
 import report from '../../pdfs/21Q2Report.pdf';
 import risk from '../../pdfs/RiskPerspective.pdf';
+import readinessScoring from '../../pdfs/ML Readiness Scoring Methodology Report.pdf';
 import Q22021 from '../../images/Q2-2021.png';
 import riskImg from '../../images/riskImg.png';
 import right from '../../icons/yumi-arrow.png';
+import readinessScoringImg from '../../images/ML Readiness Scoring Img.png';
 
 class Reports extends React.Component {
     constructor(props) {
@@ -54,7 +56,7 @@ class Reports extends React.Component {
                         </a>
                     </div>
                 </div>
-                <div className="launching-soon">Launching Soon</div>
+                {/* <div className="launching-soon">Launching Soon</div> */}
                 <div className="ctas-container">
                     <div className="cta-container">
                         <a href="https://survey.loxz.com" className="link cta">
@@ -87,6 +89,20 @@ class Reports extends React.Component {
                         <div className="report-signature">-Chen Song, Data Scientist</div>
                         <div className="cta-container">
                             <a href={risk} className="link cta">
+                                <div className="cta-text">Go to Report</div>
+                                <img src={right} alt="" className="cta-img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="report-container">
+                    <a href={readinessScoring} className="report-link"><img src={readinessScoringImg} alt="Q2 2021" className="report-cover" /></a>
+                    <div className="reports-header-container">
+                            <div className="report-header">The Loxz Digital survey is not just a survey, it’s a diagnostic assessment which uses a tightly vetted answer
+                                key system to simultaneously increase accuracy while reducing bias. It is meant to assess the readiness of an organization that is considering building ML Models.</div>
+                        <div className="report-signature">-Chen Song, Data Scientist</div>
+                        <div className="cta-container">
+                            <a href={readinessScoring} className="link cta">
                                 <div className="cta-text">Go to Report</div>
                                 <img src={right} alt="" className="cta-img" />
                             </a>

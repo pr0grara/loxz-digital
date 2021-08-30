@@ -33,7 +33,7 @@ class Landing extends React.Component {
         // closeButton.className = 'close';
         // closeButton.innerText = 'close';
         const reference = typeformEmbed.createSlider(
-           'AhCdegfT', //secondary
+           'fT', //secondary
         //    'xF6ZyWUR', //primary
            {
                mode: 'drawer_left',
