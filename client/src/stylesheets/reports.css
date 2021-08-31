@@ -47,7 +47,7 @@
 
 .report-container {
     position: relative;
-    --width: 40vw;
+    --width: 55vw;
     --height: calc(var(--width) * 0.56);
     width: var(--width);
     margin: 0 1rem 3rem 1rem;
@@ -134,6 +134,13 @@
 
 .report-header {
     font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.report-body {
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .report-link {

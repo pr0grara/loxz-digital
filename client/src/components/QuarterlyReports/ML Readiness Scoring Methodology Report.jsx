@@ -33,10 +33,10 @@ class ScoringMethodology extends React.Component {
                 <div className="reports-container solo-report">
                     <div className="report-container">
                         <div className="reports-header-container">
-                            <div className="report-header">In this 16-page report , we focus on Introducing the Loxz Digital ML Readiness Scoring Methodology</div>
+                            <div className="report-header">In this 16-page report, we introduce the Scoring Methodology behind Loxz Digital's ML Readiness Survey</div>
                             <div className="report-body">The Loxz Digital survey is not just a survey, it’s a diagnostic assessment which uses a tightly vetted answer
                                 key system to simultaneously increase accuracy while reducing bias. It is meant to assess the readiness of an organization that is considering building ML Models. Areas of focus in the report include, our updated scoring methodology, data summaries of respondents, conclusions that help you take the next step in your ML Journey, and a preview on what to expect in our Q3 Report.</div>
-                            <div className="report-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
+                            <div className="report-signature">-Chen Song,  Data Scientist</div>
                             <div className="cta-container">
                                 <a href={report} className="link cta">
                                     <div className="cta-text">Go to Report</div>
@@ -44,7 +44,7 @@ class ScoringMethodology extends React.Component {
                                 </a>
                             </div>
                         </div>
-                    <a href={report} className="report-link"><img src={img} alt="Q2 2021" className="report-cover" /></a>
+                    <a href={report} className="report-link"><img src={img} alt="Scoring Methodology" className="report-cover" /></a>
                     </div>
                 </div>
             </>
