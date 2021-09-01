@@ -32,6 +32,7 @@ class ScoringMethodology extends React.Component {
                 </div>
                 <div className="reports-container solo-report">
                     <div className="report-container">
+                        <div className="publish-date">Published 8/27/2021</div>
                         <div className="reports-header-container">
                             <div className="report-header">In this 16-page report, we introduce the Scoring Methodology behind Loxz Digital's ML Readiness Survey</div>
                             <div className="report-body">The Loxz Digital survey is not just a survey, it’s a diagnostic assessment which uses a tightly vetted answer

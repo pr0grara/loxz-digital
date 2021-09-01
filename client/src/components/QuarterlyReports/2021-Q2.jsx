@@ -32,6 +32,7 @@ class Q2_2021 extends React.Component {
                 </div>
                 <div className="reports-container solo-report">
                     <div className="report-container">
+                        <div className="publish-date">Published 7/7/2021</div>
                         <div className="reports-header-container">
                             <div className="report-header">Welcome to Loxz. Each quarter we release our findings from our ML Readiness Survey. This report released on July 7, 2021, focuses on whether a company is ready for the implementation of machine learning in their organization and is structured to help you define four major barriers to assist in your efforts.</div>
                             <div className="report-signature">-Chen Song, Lead Contributor,  Data Scientist</div>
