@@ -68,6 +68,14 @@
     /* width: 30vw; */
 }
 
+.publish-date {
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .privacy-cta-container {
     font-family: Roboto;
     /* position: absolute;

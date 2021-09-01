@@ -67,13 +67,13 @@ class Reports extends React.Component {
                 </div>
             </div>
             <div className="reports-container">
-                <div className="blocker-component">&nbsp;</div>
                 <div className="reports-header">Welcome to Loxz. Each quarter we release our findings from our ML Readiness Survey. You can find all reports here.</div>
                     <div className="report-container reports-index">
-                    <a href={report} className="report-link"><img src={Q22021} alt="Q2 2021" className="report-cover" /></a>
-                    <div className="reports-header-container">
-                        <div className="report-header">This report released on July 7, 2021, focuses on whether a company is ready for the implementation of machine learning in their organization and is structured to help you define four major barriers to assist in your efforts.</div>
-                        <div className="report-signature">-Chen Song, Lead Contributor, Data Scientist</div>
+                        <div className="publish-date">7/7/2021 </div>
+                        <a href={report} className="report-link"><img src={Q22021} alt="Q2 2021" className="report-cover" /></a>
+                        <div className="reports-header-container">
+                            <div className="report-header">This report released on July 7, 2021, focuses on whether a company is ready for the implementation of machine learning in their organization and is structured to help you define four major barriers to assist in your efforts.</div>
+                            <div className="report-signature">-Chen Song, Lead Contributor, Data Scientist</div>
                         <div className="cta-container">
                             <a href={report} className="link cta">
                                 <div className="cta-text">Go to Report</div>
@@ -83,8 +83,9 @@ class Reports extends React.Component {
                     </div>
                 </div>
                     <div className="report-container reports-index">
-                    <a href={risk} className="report-link"><img src={riskImg} alt="Q2 2021" className="report-cover" /></a>
-                    <div className="reports-header-container">
+                        <div className="publish-date">7/13/2021 </div>
+                        <a href={risk} className="report-link"><img src={riskImg} alt="Q2 2021" className="report-cover" /></a>
+                        <div className="reports-header-container">
                             <div className="report-header">In this 2-page report discover whether your company segment takes enough risk when building models. Leaders tend to be more conservative while start ups take more risk.</div>
                         <div className="report-signature">-Chen Song, Data Scientist</div>
                         <div className="cta-container">
@@ -96,8 +97,9 @@ class Reports extends React.Component {
                     </div>
                 </div>
                     <div className="report-container reports-index">
-                    <a href={readinessScoring} className="report-link"><img src={readinessScoringImg} alt="Q2 2021" className="report-cover" /></a>
-                    <div className="reports-header-container">
+                        <div className="publish-date">8/27/2021 </div>
+                        <a href={readinessScoring} className="report-link"><img src={readinessScoringImg} alt="Q2 2021" className="report-cover" /></a>
+                        <div className="reports-header-container">
                             <div className="report-header">The Loxz Digital survey is not just a survey, it’s a diagnostic assessment which uses a tightly vetted answer
                                 key system to simultaneously increase accuracy while reducing bias. It is meant to assess the readiness of an organization that is considering building ML Models.</div>
                         <div className="report-signature">-Chen Song, Data Scientist</div>
