@@ -48,11 +48,12 @@
 .report-container {
     position: relative;
     --width: 55vw;
-    --height: calc(var(--width) * 0.56);
+    /* --height: calc(var(--width) * 0.56); */
+    --height: calc(var(--width) * 0.2);
     width: var(--width);
     margin: 0 1rem 3rem 1rem;
     /* margin-top: 3rem; */
-    /* height: var(--height); */
+    /* height: 40vh; */
     z-index: 1;
     /* box-shadow: whitesmoke 0px 0px 7px 1px; */
     /* border: solid white 1px; */
@@ -60,6 +61,11 @@
     /* border-top: none; */
     /* padding-bottom: 2px; */
     /* max-width: 530px; */
+}
+
+.reports-index {
+    --width: 28vw;
+    /* width: 30vw; */
 }
 
 .privacy-cta-container {
