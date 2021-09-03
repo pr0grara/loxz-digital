@@ -11,7 +11,7 @@ const app = express();
 app.use(function (req, res, next) {
     res.setHeader(
         'Content-Security-Policy-Report-Only',
-        "default-src 'self'; font-src 'self'; img-src 'self' http://localhost:* data:; script-src 'self' http:; style-src 'self'; frame-src 'self' https://*.typeform.com/; frame-ancestors https://*.typeform.com/; ",
+        "default-src 'self'; font-src 'self'; img-src 'self' http://localhost:* data:; script-src 'self' http:; style-src 'self'; frame-src 'self' https://*.typeform.com/; frame-ancestors https://*.typeform.com/; script-src 'sha256-bMRr0IEAsc+qXY7NTMcfhf0mtY1WisZpChtwZ2eMDJs='",
     );
     next();
 });
