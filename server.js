@@ -32,7 +32,7 @@ try {
     console.log("db connection failed")
 }
 
-app.get("/*", (req, res) => {
+app.get("/", (req, res) => {
     app.use(express.static("client/build"));
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 })
