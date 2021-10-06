@@ -2,7 +2,6 @@
 const { Sequelize } = require("sequelize");
 const express = require('express');
 require('dotenv/config');
-const cors = require('cors');
 const bodyParser = require('body-parser');
 const videos = require('./routes/api/videos');
 const path = require('path');
@@ -35,7 +34,6 @@ try {
 
 app.get("/*", (req, res) => {
     app.use(express.static("client/build"));
-    // res.set("Content-Security-Policy", "script-src 'sha256-bMRr0IEAsc+qXY7NTMcfhf0mtY1WisZpChtwZ2eMDJs='")
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 })
 
