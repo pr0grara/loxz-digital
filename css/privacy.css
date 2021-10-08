@@ -1,0 +1,29 @@
+.privacy-container-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.privacy-container {
+    width: 80%;
+    /* padding: 1rem; */
+    margin: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-header {
+    font-weight: 600;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.section-header {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.paragraph {
+    margin: 1rem;
+}

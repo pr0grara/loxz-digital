@@ -59,11 +59,14 @@ app.get("/reports", (req, res) => {
 })
 
 app.get('/reports/q2-2021', (req, res) => {
-    let pathToReport = path.join(__filename, '../21Q2Report.pdf');
-    let raw = fs.readFileSync(pathToReport);
-    res.contentType("application/pdf");
-    // res.setHeader('test');
+    let pathToHtml = path.join(__dirname, 'html/reports/q2-2021.html');
+    let raw = fs.readFileSync(pathToHtml).toString();
+    // console.log(raw);
+    app.use(express.static("./"));
+    // res.contentType("application/pdf");
     res.send(raw);
+    // let pathToReport = path.join(__filename, '../21Q2Report.pdf');
+    // let raw = fs.readFileSync(pathToReport);
 })
 
 // app.get("/reports", (req, res) => {
