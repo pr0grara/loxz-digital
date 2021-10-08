@@ -51,7 +51,8 @@ class Landing extends React.Component {
     }
 
     render() {
-        
+        let data = document.querySelector('.url-data');
+        // console.log(data[0].dataset.url);
         return (
             <Container className='frame'>
                 <div className="paragraph-container">

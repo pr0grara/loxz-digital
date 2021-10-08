@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const videos = require('./routes/api/videos');
 const path = require('path');
 const app = express();
+const fs = require('fs');
+const pathToIndex = path.join(__dirname, 'client/build/index.html');
 
 // app.use(function (req, res, next) {
 //     res.setHeader(
@@ -34,8 +36,42 @@ try {
 
 app.get("/", (req, res) => {
     app.use(express.static("client/build"));
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    console.log(JSON.stringify(req.originalUrl));
+    // res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    const raw = fs.readFileSync(pathToIndex).toString();
+    const pageTitle = "Home";
+    const updated = raw.replace("__PAGE_META__", `<title>${pageTitle}</title>`)
+    res.send(updated);
 })
+
+// app.get("(/*)", (req, res) => {
+//     res.send("not found");
+// })
+
+app.get("/reports", (req, res) => {
+    console.log(JSON.stringify(req.originalUrl));
+    app.use(express.static("client/build"));
+    // res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    const raw = fs.readFileSync(pathToIndex).toString();
+    const pageTitle = "Reports";
+    const updated = raw.replace("__PAGE_META__", `<title>${pageTitle}</title><div className="url-data" data-url="reports"></div>`)
+    res.send(updated);
+})
+
+app.get('/reports/q2-2021', (req, res) => {
+    let pathToReport = path.join(__filename, '../21Q2Report.pdf');
+    let raw = fs.readFileSync(pathToReport);
+    res.contentType("application/pdf");
+    // res.setHeader('test');
+    res.send(raw);
+})
+
+// app.get("/reports", (req, res) => {
+//     const raw = fs.readFileSync(pathToIndex).toString();
+//     const pageTitle = "Reports Home";
+//     const updated = raw.replace("__PAGE_META__", `<title>${pageTitle}</title>`)
+//     res.send(updated);
+// })
 
 app.use("/plotly", (req, res) => {
     
