@@ -7,6 +7,7 @@ const videos = require('./routes/api/videos');
 const path = require('path');
 const app = express();
 const fs = require('fs');
+const reportsRoute = require('./routes/html/reports');
 const pathToIndex = path.join(__dirname, 'client/build/index.html');
 
 // app.use(function (req, res, next) {
@@ -48,34 +49,25 @@ app.get("/", (req, res) => {
 //     res.send("not found");
 // })
 
-app.get("/reports", (req, res) => {
-    console.log(JSON.stringify(req.originalUrl));
-    app.use(express.static("client/build"));
-    // res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-    const raw = fs.readFileSync(pathToIndex).toString();
-    const pageTitle = "Reports";
-    const updated = raw.replace("__PAGE_META__", `<title>${pageTitle}</title><div className="url-data" data-url="reports"></div>`)
-    res.send(updated);
-})
-
-app.get('/reports/q2-2021', (req, res) => {
-    let pathToHtml = path.join(__dirname, 'html/reports/q2-2021.html');
-    let raw = fs.readFileSync(pathToHtml).toString();
-    // console.log(raw);
-    app.use(express.static("./"));
-    // res.contentType("application/pdf");
-    res.send(raw);
-    // let pathToReport = path.join(__filename, '../21Q2Report.pdf');
-    // let raw = fs.readFileSync(pathToReport);
-})
-
 // app.get("/reports", (req, res) => {
+//     console.log(JSON.stringify(req.originalUrl));
+//     app.use(express.static("client/build"));
+//     // res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 //     const raw = fs.readFileSync(pathToIndex).toString();
-//     const pageTitle = "Reports Home";
-//     const updated = raw.replace("__PAGE_META__", `<title>${pageTitle}</title>`)
+//     const pageTitle = "Reports";
+//     const updated = raw.replace("__PAGE_META__", `<title>${pageTitle}</title><div className="url-data" data-url="reports"></div>`)
 //     res.send(updated);
 // })
 
+
+// app.get('/reports/q2-2021', (req, res) => {
+    //     let pathToHtml = path.join(__dirname, 'html/reports/q2-2021.html');
+    //     let raw = fs.readFileSync(pathToHtml).toString();
+    //     app.use(express.static("./"));
+    //     res.send(raw);
+    // })
+app.use('/reports', reportsRoute);
+    
 app.use("/plotly", (req, res) => {
     
 })
